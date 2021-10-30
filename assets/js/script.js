@@ -61,7 +61,7 @@ function generatePassword() {
         var passCodes = codes[Math.floor(Math.random() * codes.length + 1)];
         password.push(passCodes);
     }
-    var finalPassword = password.toString();
+    var finalPassword = password.join("");
 
     writePassword(finalPassword);
     return finalPassword;
